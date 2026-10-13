@@ -4,6 +4,20 @@ Protótipo didático de irrigação automatizada desenvolvido com ESP32, Arduino
 
 > O projeto é uma simulação educacional. O DHT22 mede umidade do ar, o LDR mede intensidade de luz e os botões não medem nutrientes reais. Esses componentes representam sensores agrícolas para fins didáticos.
 
+
+##  Integrantes
+
+- [Matheus Conciani - RM559473](https://www.linkedin.com/in/matheusconciani/)
+
+### Tutor
+
+- [Leonardo Ruiz Orabona](https://www.linkedin.com/in/leonardoorabona/)
+
+### Coordenador
+
+- André Godoi
+
+
 ## Simulação
 
 [Abrir o projeto ROOTSO no Wokwi](https://wokwi.com/projects/477721948578267137)
