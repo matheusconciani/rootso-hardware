@@ -91,10 +91,11 @@ O valor analógico do LDR é convertido proporcionalmente, usando a faixa de lei
 
 ```text
 pH simulado = leitura do LDR × 14 / 4095
+```
 Essa conversão serve somente para representar uma escala na simulação. Um LDR não mede pH. No projeto, a atividade também propõe alterar o LDR quando os estados dos botões N, P ou K forem modificados, para representar didaticamente uma possível mudança de pH.
 
 Código e arquivos
-
+```text
 rootso-hardware/
 ├── README.md
 ├── assets/
@@ -104,6 +105,7 @@ rootso-hardware/
     ├── diagram.json
     ├── libraries.txt
     └── sketch.ino
+```
 wokwi/diagram.json: componentes e conexões do circuito simulado.
 wokwi/sketch.ino: código Arduino C/C++ executado pelo ESP32.
 wokwi/libraries.txt: bibliotecas utilizadas pelo sketch.
