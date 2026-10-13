@@ -92,9 +92,11 @@ O valor analógico do LDR é convertido proporcionalmente, usando a faixa de lei
 ```text
 pH simulado = leitura do LDR × 14 / 4095
 ```
+
 Essa conversão serve somente para representar uma escala na simulação. Um LDR não mede pH. No projeto, a atividade também propõe alterar o LDR quando os estados dos botões N, P ou K forem modificados, para representar didaticamente uma possível mudança de pH.
 
-Código e arquivos
+## Código e arquivos
+
 ```text
 rootso-hardware/
 ├── README.md
@@ -106,45 +108,57 @@ rootso-hardware/
     ├── libraries.txt
     └── sketch.ino
 ```
-wokwi/diagram.json: componentes e conexões do circuito simulado.
-wokwi/sketch.ino: código Arduino C/C++ executado pelo ESP32.
-wokwi/libraries.txt: bibliotecas utilizadas pelo sketch.
-assets/: imagens do circuito e da tela OLED.
-Como executar
-Acesse o projeto ROOTSO no Wokwi.
-Inicie a simulação com o botão Play.
-Observe os valores no OLED e no Monitor Serial.
-Altere a umidade do DHT22 para testar o acionamento do relé.
-Pressione os botões N, P e K individualmente e observe os indicadores.
-Ajuste o controle de luz do LDR e observe a leitura analógica e o pH simulado.
-Para reproduzir o projeto em outro sketch do Wokwi, use os arquivos diagram.json e sketch.ino da pasta wokwi/ e adicione as bibliotecas indicadas no arquivo libraries.txt.
 
-Bibliotecas
+- `wokwi/diagram.json`: componentes e conexões do circuito simulado.
+- `wokwi/sketch.ino`: código Arduino C/C++ executado pelo ESP32.
+- `wokwi/libraries.txt`: bibliotecas utilizadas pelo sketch.
+- `assets/`: imagens do circuito e da tela OLED.
+
+## Como executar
+
+1. Acesse o projeto ROOTSO no Wokwi.
+2. Inicie a simulação com o botão Play.
+3. Observe os valores no OLED e no Monitor Serial.
+4. Altere a umidade do DHT22 para testar o acionamento do relé.
+5. Pressione os botões N, P e K individualmente e observe os indicadores.
+6. Ajuste o controle de luz do LDR e observe a leitura analógica e o pH simulado.
+
+Para reproduzir o projeto em outro sketch do Wokwi, use os arquivos `diagram.json` e `sketch.ino` da pasta `wokwi/` e adicione as bibliotecas indicadas no arquivo `libraries.txt`.
+
+## Bibliotecas
+
 O projeto utiliza:
 
-Adafruit GFX Library
-Adafruit SSD1306
-DHT sensor library for ESPx
-Testes realizados
+- Adafruit GFX Library
+- Adafruit SSD1306
+- DHT sensor library for ESPx
+
+## Testes realizados
+
 Durante os testes no Wokwi, foram observados:
 
-leitura variável de umidade e temperatura pelo DHT22;
-mudança dos indicadores N, P e K ao pressionar cada botão;
-variação da leitura LDR e do pH simulado ao alterar a intensidade de luz;
-irrigação ligada com uma leitura de umidade de 26%;
-irrigação desligada com uma leitura de umidade de 61,5%;
-exibição do estado da irrigação no OLED e no Monitor Serial.
-Limitações
-O DHT22 mede umidade do ar, não umidade do solo. Nesta atividade, é utilizado como aproximação didática.
-O LDR mede intensidade de luz, não pH. A conversão para 0–14 é apenas uma representação didática.
-Os botões representam estados binários de N, P e K; não medem concentração de nutrientes.
-O módulo relé representa uma bomba na simulação. Não há bomba física controlada por este protótipo.
-Os limites de irrigação e as leituras apresentados não devem ser usados como recomendação de manejo agrícola real.
-Nesta versão, somente a umidade simulada controla a irrigação; N, P, K e pH são exibidos para monitoramento didático.
-Vídeo de demonstração
+- leitura variável de umidade e temperatura pelo DHT22;
+- mudança dos indicadores N, P e K ao pressionar cada botão;
+- variação da leitura LDR e do pH simulado ao alterar a intensidade de luz;
+- irrigação ligada com uma leitura de umidade de 26%;
+- irrigação desligada com uma leitura de umidade de 61,5%;
+- exibição do estado da irrigação no OLED e no Monitor Serial.
+
+## Limitações
+
+- O DHT22 mede umidade do ar, não umidade do solo. Nesta atividade, é utilizado como aproximação didática.
+- O LDR mede intensidade de luz, não pH. A conversão para 0–14 é apenas uma representação didática.
+- Os botões representam estados binários de N, P e K; não medem concentração de nutrientes.
+- O módulo relé representa uma bomba na simulação. Não há bomba física controlada por este protótipo.
+- Os limites de irrigação e as leituras apresentados não devem ser usados como recomendação de manejo agrícola real.
+- Nesta versão, somente a umidade simulada controla a irrigação; N, P, K e pH são exibidos para monitoramento didático.
+
+## Vídeo de demonstração
+
 Adicionar aqui o link do vídeo não listado no YouTube, com duração máxima de cinco minutos:
 
 [Inserir link do vídeo do YouTube]
 
-Continuidade do Rootso
+## Continuidade do Rootso
+
 Este protótipo de hardware complementa o projeto Rootso, que trabalha com agricultura digital e inclui as culturas de milho e soja. Nesta etapa, foi escolhida a cultura do milho.
