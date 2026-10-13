@@ -155,9 +155,8 @@ Durante os testes no Wokwi, foram observados:
 
 ## Vídeo de demonstração
 
-Adicionar aqui o link do vídeo não listado no YouTube, com duração máxima de cinco minutos:
 
-[Inserir link do vídeo do YouTube]
+[Inserir link do vídeo do YouTube](https://youtu.be/Dx4e4OINxjg)
 
 ## Continuidade do Rootso
 
