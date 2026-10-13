@@ -156,7 +156,7 @@ Durante os testes no Wokwi, foram observados:
 ## Vídeo de demonstração
 
 
-[Inserir link do vídeo do YouTube](https://youtu.be/Dx4e4OINxjg)
+[Assistir à demonstração](https://youtu.be/Dx4e4OINxjg)
 
 ## Continuidade do Rootso
 
